@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <link rel="stylesheet" href="prodcut.css">
+</head>
+<body>
+    <div class="main">
+        <h2 class="main_header">Product Table</h2>
+        <form id="productForm">
+            <input type="text" id="productInput" name="product" placeholder="Nhập sản phẩm" required>
+            <input type="text" id="priceInput" name="price" placeholder="Giá" required>
+            <button type="submit">Thêm</button>
+        </form>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Giá</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="productItems"></tbody>
+        </table>
+    </div>
+    <script src="product.js"></script>
+</body>
+</html>
